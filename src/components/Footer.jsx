@@ -13,7 +13,7 @@ const Footer = () => {
             <div>
                 <a href=""><i className="fa-brands fa-facebook"></i></a>
                 <a href=""><i className="fa-brands fa-instagram"></i></a>
-                <a href='https://wa.me/+255627185625' target='blank'><i className=" wa fa-brands fa-whatsapp"></i></a>
+                <a href='https://wa.me/+255753711123' target='blank'><i className=" wa fa-brands fa-whatsapp"></i></a>
               
             </div>
         </article>
@@ -22,7 +22,7 @@ const Footer = () => {
                 <h4>Address Tanzania</h4>
                 <h4>Plot. 470 Philips</h4>
                 <h4>Arusha, Tanzania</h4>
-                <h4>+255 627 185 625</h4>
+                <h4>+255 753 711 123</h4>
                 <h4>+255 627 185 625</h4>
             </div>
             <div>

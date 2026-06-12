@@ -6,7 +6,7 @@ export const WhatsAppIcon = () => {
     <section>
       
 
-        <a href='https://wa.me/+255627185625' className="float" target="_blank">
+        <a href='https://wa.me/+255753711123' className="float" target="_blank">
         <i className=" fa-brands fa-whatsapp my-float"></i>
         </a>
     </section>
