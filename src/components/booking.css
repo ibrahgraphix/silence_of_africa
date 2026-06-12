@@ -1,0 +1,35 @@
+form {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  input,
+  button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+  }
+
+
+@media screen and (max-width: 576px) {
+    form {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    input,
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .booking>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

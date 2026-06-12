@@ -1,0 +1,90 @@
+.Destinations{
+    padding: 4rem 6rem;
+}
+
+.Destinations h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.Destinations p{
+    font-size: 1.1rem;
+    text-align:center;
+    
+}
+
+.destination{
+    display: flex;
+    margin-top: 4.3rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.destination-reverse{
+    flex-direction: row-reverse;
+    display: flex;
+    margin-top: 4.3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.destination-reverse > .dest-img{
+    margin-top: 2rem;
+}
+
+.dest-text{
+    width: 45%;
+    
+}
+.dest-text h3{
+    text-align: start;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    color: black;
+}
+.dest-text p{
+    margin-top: 1.2rem;
+    text-align: start;
+}
+
+.dest-img{
+    display: flex;
+    position: relative;
+    width: 50%;
+    justify-content: space-between;
+    text-align: center;
+    z-index: -100;
+}
+.dest-img img{
+    width: 49%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: .3rem;
+    box-shadow: 11px 1px 13px 1px rgba(0, 1, 1, 0.1);
+}
+
+.dest-img img:nth-child(2){
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+@media  screen and (max-width:850px) {
+    .Destinations{
+        padding: 2rem 4rem;
+    }
+    .destination{
+        flex-direction: column-reverse;
+    }
+    .dest-text{
+        width: 100%;
+        margin-top: 1.2rem;
+    }
+    .dest-img{
+        width: 100%;
+    }
+    .dest-img img{
+        height: 260px;
+    }
+    .destination-reverse{
+        flex-direction: column;
+        
+    }
+}

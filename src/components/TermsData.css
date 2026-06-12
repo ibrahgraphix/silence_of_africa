@@ -1,0 +1,39 @@
+.title-term{
+
+    
+    margin-left: 2rem;
+  
+}
+
+.body{
+    margin-left: 2rem;
+
+}
+.body .condition-body{
+    text-align: justify;
+    
+}
+@media screen and (max-width:850px){
+    .title-term{
+        margin-left: .5rem;
+        display: flex;
+        flex: 1;
+        text-align: start;
+        margin-top: .6rem;
+    }
+    .condition-header{
+        font-size: 1.5rem;
+
+        
+    }
+    .condition-body{
+        display: flex;
+        font-size:.8rem
+    }
+    .body{
+        text-align: justify;
+        font-size: .9rem;
+        margin-left: .5rem;
+        width: fit-content;
+    }
+}

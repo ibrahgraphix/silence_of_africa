@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align:start;
+  
+  box-sizing: border-box;
+  font-family: 'Lato','Caveat',sans-serif, cursive;
+}
+
+a{
+  text-decoration: none;
+}
+:root{
+  --primary-color:#9b8856;
+  --secondary-color:#332624;
+  --header-text-color:#434343;
+  --transition-effect:all .5s ease-in-out;
+  
+}
+h1,h2,h3{
+
+  font-family: 'Dancing Script', cursive;
+}
+h1{
+  font-weight: 700;
+  font-size: 2rem;
+  
+}
+h3{
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+a{
+  text-decoration: none;
+}
+p{
+  
+    
+    text-align:center;
+    
+
+}

@@ -1,0 +1,143 @@
+/* YourComponent.css */
+
+.your-component {
+  position: relative;
+  overflow: hidden;
+  
+  
+  margin: 0 0.5rem;
+
+}
+
+.component-image {
+  width:40rem;
+  object-fit: contain;
+  height:30rem;
+  transition: transform 0.3s ease-out;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+  transition: opacity 0.3s ease-in-out;
+}
+.text-container h2{
+  opacity: 1;
+  font-size: 3rem;
+}
+
+.your-component:hover p{
+  opacity: 1;
+}
+
+.your-component:hover .component-image {
+  transform: scale(1.1);
+}
+
+.your-component h2 {
+  font-size: 1.5rem;
+}
+
+.your-component p {
+  font-size: 1rem;
+}
+
+.your-component button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.your-component button:hover {
+  background-color: #2980b9;
+}
+
+/* Initially hide the button */
+.hidden-button {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.your-component:hover .hidden-button {
+  opacity: 1;
+}
+.card-container{
+  display: flex;
+  
+}
+.experience{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  
+}
+.experience h2,p{
+  text-align: center;
+  color: black;
+}
+.experiences{
+  padding: 4rem 6rem;
+}
+
+
+
+@media screen and (max-width:850px){
+  .card-container{
+    flex-direction: column;
+  
+    
+    
+  }
+  
+  .experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .text-container h2{
+    font-size: 3rem;
+    font-weight: 900px;
+  }
+  .experiences{
+    padding: 2rem 4rem;
+  }
+  .component-image{
+    width: 390px;
+    flex: 1;
+    margin-top: 2em;
+
+    
+    object-fit:cover;
+    border-radius: 5px;
+    height: 30rem;
+    
+    
+  }
+  .your-component{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+  
+  
+}

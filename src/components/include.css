@@ -1,0 +1,32 @@
+.IncludedList {
+    width: 100%;
+    margin: 2rem auto;
+    background: var(--secondary-color);
+    border-radius: 1rem;
+    color: #fff;
+    list-style-type:armenian;
+  }
+
+  
+  
+  .IncludedList li {
+    padding: 10px;
+    display: flex;
+    flex-direction:row;
+    
+  }
+  @media screen and (max-width: 576px) {
+    .IncludedList {
+      max-width: 400px;
+    }
+  }
+  
+  
+  .IncludedList li {
+    display:block;
+    margin: 0 10px;
+  }
+  h2{
+    color: rgb(247, 238, 238);
+    font-size: 2rem;
+  }  

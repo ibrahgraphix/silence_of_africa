@@ -1,0 +1,94 @@
+/* Singlepackage.css */
+/* Add your CSS for the Singlepackage component here */
+
+/* List Styles */
+.responsive-list {
+    display: flex;
+    justify-content: center;
+  }
+  .list{
+    flex: 0.5;
+  }
+  .ex-in{
+    flex: 0.4;
+    margin-top: 2rem;
+  }
+  .list-style {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list-style li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    background-color:var(--primary-color);
+    text-align: start; /* Set text alignment to start (left) */
+  }
+  
+  .list-style li p {
+    font-size: 1rem;
+    text-align: start;
+    margin: 0;
+  }
+  .list-style li h3 {
+    font-size: 1.5rem;
+    text-align: start;
+    margin: 0;
+  }
+  .btnbook-container{
+    padding: 1rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .showbtn{
+    
+    background-color: var(--primary-color);
+    padding: .7rem .5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    margin: .7rem 0;
+    
+    
+    
+    
+    
+}
+  
+  @media (max-width: 768px) {
+    .responsive-list{
+      display: flex;
+      flex-direction: column;
+    }
+    .list-style{
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      
+
+    }
+    .list-style li {
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      margin:auto;
+    }
+    .ex-in{
+      flex: 1;
+    }
+    .list{
+      flex: 1;
+      
+    }
+  }
+  .distance, .time{
+    color: #e1e1e1;
+  }
+  
+  /* Add more styles as needed */
+  

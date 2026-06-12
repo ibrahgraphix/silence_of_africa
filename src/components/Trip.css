@@ -1,0 +1,119 @@
+.Trip{
+    padding: 4rem 6rem;
+    
+}
+.tripCard h3{
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-top: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+}
+.tripCard p{
+    text-align: justify;
+}
+.Trip h1,p{
+    text-align: center;
+}
+.trips-card{
+    display: grid;;
+    grid-template-columns: 50% 50%;
+    margin-top: 3rem;
+    justify-content: space-between;
+    
+    
+}
+.tripCard{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    width: 100%;
+    border-radius: 6px;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 25px 2px rgba(0,0,0,0.1);
+}
+.trip-img{
+    height: 400px;
+    overflow: hidden;
+    border-radius: 6px;
+
+}
+.trip-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: .3s ease-in-out;
+}
+.trip-img:hover img{
+    transform: scale(1.4);
+}
+.cardTail{
+    display: flex;
+    justify-content:center;
+    margin-top: 0.1rem;
+    padding: 1rem 1rem;
+    background: var(--primary-color);
+    color: #fff;
+}
+.cardTail i{
+    color: #fff;
+}
+.price-duration{
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    padding: .3rem;
+    background: var(--secondary-color);
+    color: #fff;
+    margin: .2rem 0;
+}
+.period{
+    padding: .3rem;
+    background: var(--secondary-color);
+    color: #fff;
+    margin: .2rem 0;
+}
+
+@media screen and (max-width:850px){
+    .Trip{
+        padding: 4rem 2rem;
+    }
+    .Trip p{
+        text-align: center;
+        width: 100%;
+        font-size: smaller;
+        font-weight: 500;
+        
+    }
+    .tripCard{
+        width: 100%;
+    }
+    .trips-card{
+        grid-template-columns: 100% ;
+    }
+    .tripCard h3,p{
+        text-align: start;
+        width: 100%;
+        
+    }
+    .cardTail{
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
+        align-items: center;
+        
+    }
+    .tripCard>h3{
+        font-size:1rem;
+        margin: .4rem 0;
+        font-weight: bolder;
+        width:90vw;
+        overflow: hidden;
+    }
+}
