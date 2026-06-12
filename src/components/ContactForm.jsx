@@ -42,7 +42,7 @@ const ContactForm = () => {
       `Special request: ${specialRequest || 'None'}`,
     ].join('\n');
 
-    const whatsappNumber = '255688410445';
+    const whatsappNumber = '255627185625';
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -61,7 +61,7 @@ const ContactForm = () => {
                 <a><i className="fb fa-brands fa-square-instagram"></i></a>
               </div>
               <div className="link">
-                <a href="https://wa.me/+255688410445" target="_blank" rel="noreferrer"><i className="wa fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/+255627185625" target="_blank" rel="noreferrer"><i className="wa fa-brands fa-whatsapp"></i></a>
               </div>
             </div>
           </div>
