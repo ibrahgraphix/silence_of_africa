@@ -24,6 +24,7 @@ const Footer = () => {
                 <h4>Arusha, Tanzania</h4>
                 <h4>+255 753 711 123</h4>
                 <h4>+255 627 185 625</h4>
+                <h4>silenceofafricasafaris8@gmail.com</h4>
             </div>
             <div>
                 <p><span><Link to="/terms" className="footer-link" href="">Terms and Condition</Link></span></p>
