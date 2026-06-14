@@ -13,7 +13,7 @@ const Culturetour = () => {
         </div>
         <div className="container">
       <div className="image-column">
-        <img src={bg} alt="Your Image Alt Text" />
+        <img src={bg} alt="Tanzanian cultural immersion - local traditions and heritage" />
       </div>
       <div className="text-column">
         <h2>Connect With The Locals</h2>

@@ -6,7 +6,7 @@ const Hero = (props) => {
   return (
     <section>
     <article className={props.cname}>
-        <img  src={props.heroImg} alt="bg" />
+        <img  src={props.heroImg} alt={props.title || "Safari adventure destination"} />
         <div className="hero-text">
             <h1>{props.title}</h1>
             <p>{props.text}</p>

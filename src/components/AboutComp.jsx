@@ -11,7 +11,7 @@ const AboutComp = () => {
         </div>
         <div className="container">
       <div className="image-column">
-        <img src={bg} alt="Your Image Alt Text" />
+        <img src={bg} alt="Silence of Africa Safari - About Us landscape" />
       </div>
       <div className="text-column">
         

@@ -11,8 +11,8 @@ const DestinationData = (props) => {
                 <p>{props.text}</p>
             </div>
             <motion.div className="dest-img">
-                <img src={props.bg} alt="img" />
-                <img src={props.bg2} alt="img" />
+                <img src={props.bg} alt={`${props.title} - Destination view`} />
+                <img src={props.bg2} alt={`${props.title} - Additional destination view`} />
             </motion.div>
 
         </div>

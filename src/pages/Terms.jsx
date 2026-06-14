@@ -6,9 +6,20 @@ import "./Terms.css"
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import { WhatsAppIcon } from '../components/WhatsAppIcon'
+import SEO from '../components/SEO'
+import { seoMetadata } from '../utils/seoMetadata'
 
 const Terms = () => {
   return (
+    <>
+    <SEO 
+      title={seoMetadata.terms.title}
+      description={seoMetadata.terms.description}
+      keywords={seoMetadata.terms.keywords}
+      ogImage={seoMetadata.terms.ogImage}
+      ogType={seoMetadata.terms.ogType}
+      canonicalUrl="/terms"
+    />
     <main  >
       <Navbar />
       <Hero 
@@ -55,6 +66,7 @@ To administer a contest, promotion, survey or other site feature."
       <WhatsAppIcon  />
     <Footer />    
     </main>
+    </>
   )
 }
 

@@ -6,7 +6,7 @@ const Tripdata = (props) => {
     
     <article className="tripCard">
       <div className="trip-img">
-          <img src={props.bg} alt="img" />
+          <img src={props.bg} alt={`${props.title} - Safari tour package`} />
       </div>
       <h3>{props.title}</h3>
       <p>{props.text}</p>

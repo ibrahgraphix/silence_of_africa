@@ -8,6 +8,8 @@ import './single.css';
 import IncludedList from '../components/Included';
 import ExcludedList from '../components/Exclude';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import SEO from '../components/SEO';
+import { seoMetadata } from '../utils/seoMetadata';
 
 
 
@@ -20,8 +22,18 @@ const Singlepackage = () => {
 
   if (item) {
     const { title, days, img } = item;
+    const metadata = seoMetadata.singlePackage(title);
 
     return (
+      <>
+      <SEO 
+        title={metadata.title}
+        description={metadata.description}
+        keywords={metadata.keywords}
+        ogImage={metadata.ogImage}
+        ogType={metadata.ogType}
+        canonicalUrl={`/packages/${detailId}`}
+      />
       <section>
         <Navbar />
         <Hero cname="hero-mid" heroImg={img[0]} title={title} />
@@ -59,6 +71,7 @@ const Singlepackage = () => {
         <Footer />
         
       </section>
+      </>
     );
   } else {
     return (

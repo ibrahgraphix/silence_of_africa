@@ -6,12 +6,23 @@ import Footer from '../components/Footer'
 import { useGlobalContext } from '../../Context'
 import { Link } from 'react-router-dom'
 import { WhatsAppIcon } from '../components/WhatsAppIcon'
+import SEO from '../components/SEO'
+import { seoMetadata } from '../utils/seoMetadata'
 
 
 const Safaris = () => {
   const {packages}=useGlobalContext()
   const[category,setCategory]=useState("safari")
   return (
+    <>
+    <SEO 
+      title={seoMetadata.safaris.title}
+      description={seoMetadata.safaris.description}
+      keywords={seoMetadata.safaris.keywords}
+      ogImage={seoMetadata.safaris.ogImage}
+      ogType={seoMetadata.safaris.ogType}
+      canonicalUrl="/safaris"
+    />
     <main>
         <Navbar />
         <Hero 
@@ -31,7 +42,7 @@ const Safaris = () => {
             return(
               <article key={item.id} className="tripCard">
               <div className="trip-img">
-                  <img src={item.img[0]} alt="img" />
+                  <img src={item.img[0]} alt={`${item.title} - Wildlife safari tour package`} />
               </div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
@@ -62,6 +73,7 @@ const Safaris = () => {
     <Footer />
         
     </main>
+    </>
   )
 }
 

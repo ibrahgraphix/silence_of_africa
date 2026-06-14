@@ -7,11 +7,22 @@ import { useGlobalContext } from '../../Context'
 import "./Hiking.css"
 import { Link } from 'react-router-dom'
 import { WhatsAppIcon } from '../components/WhatsAppIcon'
+import SEO from '../components/SEO'
+import { seoMetadata } from '../utils/seoMetadata'
 
 const Hiking = () => {
   const{packages}=useGlobalContext()
   const[category,setCategory]=useState("hiking")
   return (
+    <>
+    <SEO 
+      title={seoMetadata.hiking.title}
+      description={seoMetadata.hiking.description}
+      keywords={seoMetadata.hiking.keywords}
+      ogImage={seoMetadata.hiking.ogImage}
+      ogType={seoMetadata.hiking.ogType}
+      canonicalUrl="/hiking"
+    />
     <main>
         <Navbar />
          <Hero 
@@ -31,7 +42,7 @@ const Hiking = () => {
             return(
               <article key={item.id} className="tripCard">
               <div className="trip-img">
-                  <img src={item.img[0]} alt="img" />
+                  <img src={item.img[0]} alt={`${item.title} - Mountain hiking and trekking tour`} />
               </div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
@@ -63,6 +74,7 @@ const Hiking = () => {
       <WhatsAppIcon />
     <Footer />
     </main>
+    </>
   )
 }
 

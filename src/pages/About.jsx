@@ -6,12 +6,23 @@ import Footer from '../components/Footer'
 import { WhatsAppIcon } from '../components/WhatsAppIcon'
 import AboutComp from '../components/AboutComp'
 import WhyUs from '../components/WhyUs'
+import SEO from '../components/SEO'
+import { seoMetadata } from '../utils/seoMetadata'
 
 
 
 
 const About = () => {
   return (
+    <>
+    <SEO 
+      title={seoMetadata.about.title}
+      description={seoMetadata.about.description}
+      keywords={seoMetadata.about.keywords}
+      ogImage={seoMetadata.about.ogImage}
+      ogType={seoMetadata.about.ogType}
+      canonicalUrl="/about"
+    />
     <main>
         <Navbar />
         <Hero 
@@ -28,9 +39,8 @@ const About = () => {
       
     
     <Footer />
-  
-
     </main>
+    </>
   )
 }
 

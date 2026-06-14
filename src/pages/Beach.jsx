@@ -6,12 +6,23 @@ import Footer from '../components/Footer'
 import { useGlobalContext } from '../../Context'
 import { WhatsAppIcon } from '../components/WhatsAppIcon'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
+import { seoMetadata } from '../utils/seoMetadata'
 
 
 const Beach = () => {
   const{packages}=useGlobalContext()
   const[category,setCategory]=useState('beach')
   return (
+    <>
+    <SEO 
+      title={seoMetadata.beach.title}
+      description={seoMetadata.beach.description}
+      keywords={seoMetadata.beach.keywords}
+      ogImage={seoMetadata.beach.ogImage}
+      ogType={seoMetadata.beach.ogType}
+      canonicalUrl="/beach"
+    />
     <main>
         <Navbar/>
             <Hero 
@@ -30,7 +41,7 @@ const Beach = () => {
             return(
               <article key={item.id} className="tripCard">
       <div className="trip-img">
-          <img src={item.img[0]} alt="img" />
+          <img src={item.img[0]} alt={`${item.title} - Beach vacation tour package`} />
       </div>
       <h3>{item.title}</h3>
       <p>{item.text}</p>
@@ -59,6 +70,7 @@ const Beach = () => {
       <WhatsAppIcon />
     <Footer />
     </main>
+    </>
   )
 }
 

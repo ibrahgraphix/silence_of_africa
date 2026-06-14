@@ -7,10 +7,21 @@ import bg from "../assets/contacthero.jpg"
 import Footer from "../components/Footer"
 import ContactForm from '../components/ContactForm'
 import { WhatsAppIcon } from '../components/WhatsAppIcon'
+import SEO from '../components/SEO'
+import { seoMetadata } from '../utils/seoMetadata'
 
 
 const Contact = () => {
   return (
+<>
+<SEO 
+  title={seoMetadata.contact.title}
+  description={seoMetadata.contact.description}
+  keywords={seoMetadata.contact.keywords}
+  ogImage={seoMetadata.contact.ogImage}
+  ogType={seoMetadata.contact.ogType}
+  canonicalUrl="/contact"
+/>
 <main>
     <Navbar />
     <Hero 
@@ -23,8 +34,8 @@ const Contact = () => {
   <WhatsAppIcon />
     
     <Footer />
-
 </main>
+</>
   )
 }
 

@@ -15,7 +15,7 @@ const DayTrips = () => {
         </div>
         <div className="container">
       <div className="image-column">
-        <img src={bg8} alt="Your Image Alt Text" />
+        <img src={bg8} alt="Kikuletwa Hot Springs - Chemka thermal spring in Arusha" />
       </div>
       <div className="text-column">
         <h2>Kikuletwa Hot Springs</h2>
@@ -41,14 +41,14 @@ const DayTrips = () => {
        
       </div>
       <div className="image-column">
-        <img src={bg9} alt="Your Image Alt Text" />
+        <img src={bg9} alt="Arusha National Park - African wildlife and savanna landscape" />
         
       </div>
       
     </div>
     <div className="container">
       <div className="image-column">
-        <img src={bg10} alt="Your Image Alt Text" />
+        <img src={bg10} alt="Tarangire National Park - Safari wildlife destination in Tanzania" />
       </div>
       <div className="text-column">
         <h2>A day Trip To Tarangire</h2>
@@ -74,7 +74,7 @@ const DayTrips = () => {
        
       </div>
       <div className="image-column">
-        <img src={bg11} alt="Your Image Alt Text" />
+        <img src={bg11} alt="Lake Manyara National Park - Scenic African lake and wildlife sanctuary" />
         
       </div>
       

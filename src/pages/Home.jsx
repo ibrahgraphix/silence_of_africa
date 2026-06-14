@@ -11,12 +11,22 @@ import { WhatsAppIcon } from '../components/WhatsAppIcon'
 import FourCards from '../components/FourCards'
 import DayTrips from '../components/DayTrips'
 import Culturetour from '../components/Culturetour'
+import SEO from '../components/SEO'
+import { seoMetadata } from '../utils/seoMetadata'
 
 
 
 const Home = () => {
   return (
     <>
+    <SEO 
+      title={seoMetadata.home.title}
+      description={seoMetadata.home.description}
+      keywords={seoMetadata.home.keywords}
+      ogImage={seoMetadata.home.ogImage}
+      ogType={seoMetadata.home.ogType}
+      canonicalUrl="/"
+    />
     <main>
         <Navbar />
         <Hero 

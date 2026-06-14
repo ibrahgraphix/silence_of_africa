@@ -7,9 +7,8 @@ import { AppProvider } from '../Context.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-  <AppProvider>
-  <App />
-  </AppProvider>
-    
+    <AppProvider>
+      <App />
+    </AppProvider>
   </BrowserRouter>,
 )
